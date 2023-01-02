@@ -1,15 +1,11 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import { ProfileImage } from '../components/profile';
-
+import { HeadComponent } from '../components/head';
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadComponent />
 
       <main>
         <ProfileImage />
