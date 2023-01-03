@@ -6,6 +6,7 @@ import { GithubIconImage } from '../components/github_icon';
 import { TwitterIconImage } from '../components/twitter_icon';
 import { HeadComponent } from '../components/head';
 
+// サイドメニューのCSS
 const BackgroundColor = styled.div`
   background-color: black;
 `;
@@ -66,6 +67,13 @@ const IconParent = styled.div`
   column-gap: 6%;
 `;
 
+const IconHover = styled.div`
+&:hover {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+`;
+
 export default function Home() {
   return (
     <>
@@ -73,6 +81,8 @@ export default function Home() {
 
       <BackgroundColor>
         <Body>
+          
+          {/* サイドBody：要リファクタ */}
           <SideBody>
             <ProfileImg>
               <ProfileImage />
@@ -82,13 +92,19 @@ export default function Home() {
             <WhiteNormalSideText>Born in 1996.</WhiteNormalSideText>
             <IconParent>
                 <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
-                  <TwitterIconImage />
+                  <IconHover>
+                    <TwitterIconImage />
+                  </IconHover>
                 </Link>
                 <Link href="https://github.com/NakamuraFumiya" target="_blank">
-                  <GithubIconImage />
+                  <IconHover>
+                    <GithubIconImage />
+                  </IconHover>
                 </Link>
             </IconParent>
           </SideBody>
+
+          {/* メインBody：要リファクタ */}
           <MainBody>
             <WhiteNormalMainText>aaa</WhiteNormalMainText>
           </MainBody>
