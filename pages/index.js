@@ -12,7 +12,6 @@ const BackgroundColor = styled.div`
 
 const ProfileImg = styled.div`
   margin-top: 8%;
-  margin-left: 8%;
 `;
 
 const Center = styled.div`
@@ -25,10 +24,10 @@ const Body = styled.div`
 
 const SideBody = styled.div`
   flex-grow: 0.25;
-  // position: fixed;
-  // top: 0;
-  // margin-top: 5%;
-  // margin-left: 5%;
+  position: fixed;
+  top: 0;
+  margin-top: 4%;
+  margin-left: 4%;
 `;
 
 const MainBody = styled.div`
@@ -41,7 +40,6 @@ const WhiteBoldSideText = styled.p`
   font-size: 120%;
   font-weight: bold;
   margin-top: 1%;
-  margin-left: 8%;
 `;
 
 const WhiteNormalSideText = styled.p`
@@ -49,7 +47,6 @@ const WhiteNormalSideText = styled.p`
   font-family: "Mukta Mahee";
   font-size: 80%;
   font-weight: normal;
-  margin-left: 8%;
   line-height: 0.5;
 `;
 
@@ -58,7 +55,6 @@ const WhiteNormalMainText = styled.p`
   font-family: "Mukta Mahee";
   font-size: 80%;
   font-weight: normal;
-  margin-left: 8%;
   line-height: 0.5;
 
 
@@ -67,12 +63,7 @@ const WhiteNormalMainText = styled.p`
 
 const IconParent = styled.div`
   display: flex;
-  column-gap: 2%;
-  margin-left: 8%;
-`;
-
-const GithubIcon = styled.p`
-  margin-left: 5%;
+  column-gap: 6%;
 `;
 
 export default function Home() {
