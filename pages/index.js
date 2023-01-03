@@ -13,6 +13,24 @@ const BackgroundColor = styled.div`
   height: 100%;
 `;
 
+const Body = styled.div`
+  display: flex;
+`;
+
+const Header = styled.div`
+  flex-grow: 0.25;
+  position: fixed;
+  top: 0;
+  @media screen and (max-width: 767px) {
+    margin-top: 10%;
+    margin-left: 35%;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+`;
+
 const ProfileImg = styled.div`
   margin-top: 8%;
 `;
@@ -21,24 +39,15 @@ const Center = styled.div`
   text-align: center;
 `;
 
-const Body = styled.div`
-  display: flex;
-`;
-
-const SideBody = styled.div`
-  flex-grow: 0.25;
-  margin-top: 4%;
-  margin-left: 4%;
-  position: fixed;
-  top: 0;
-`;
-
 const SideBodyDiv = styled.div`
   padding-left: 30%;
 `;
 
 const MainBody = styled.div`
   flex-grow: 0.75;
+  @media screen and (max-width: 767px) {
+    padding-top: 60%;
+  }
 `;
 
 const WhiteBoldSideText = styled.p`
@@ -89,7 +98,7 @@ export default function Home() {
         <Body>
           
           {/* サイドBody：要リファクタ */}
-          <SideBody>
+          <Header>
             <ProfileImg>
               <ProfileImage />
             </ProfileImg>
@@ -108,8 +117,8 @@ export default function Home() {
                   </IconHover>
                 </Link>
             </IconParent>
-          </SideBody>
-          <SideBodyDiv></SideBodyDiv>
+          </Header>
+          {/* <SideBodyDiv></SideBodyDiv> */}
           
 
           {/* メインBody：要リファクタ */}
