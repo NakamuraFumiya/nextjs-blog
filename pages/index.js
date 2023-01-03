@@ -9,6 +9,8 @@ import { HeadComponent } from '../components/head';
 // サイドメニューのCSS
 const BackgroundColor = styled.div`
   background-color: black;
+  width: 100%;
+  height: 100%;
 `;
 
 const ProfileImg = styled.div`
@@ -25,10 +27,14 @@ const Body = styled.div`
 
 const SideBody = styled.div`
   flex-grow: 0.25;
-  position: fixed;
-  top: 0;
   margin-top: 4%;
   margin-left: 4%;
+  position: fixed;
+  top: 0;
+`;
+
+const SideBodyDiv = styled.div`
+  padding-left: 30%;
 `;
 
 const MainBody = styled.div`
@@ -58,8 +64,8 @@ const WhiteNormalMainText = styled.p`
   font-weight: normal;
   line-height: 0.5;
 
-
-  margin-top: 10000px;
+  margin-top: 20%;
+  margin-bottom: 10000px;
 `;
 
 const IconParent = styled.div`
@@ -103,6 +109,8 @@ export default function Home() {
                 </Link>
             </IconParent>
           </SideBody>
+          <SideBodyDiv></SideBodyDiv>
+          
 
           {/* メインBody：要リファクタ */}
           <MainBody>
