@@ -11,7 +11,9 @@ const BackgroundColor = styled.div`
 `;
 
 const Body = styled.div`
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 const MainBody = styled.div`
@@ -36,45 +38,45 @@ const WhiteBoldFirstText = styled.p`
 `;
 
 const WhiteBoldMainText = styled.p`
+  color: white;
+  font-family: "Mukta Mahee";
+  font-weight: bold;
   @media screen and (max-width: 767px) {
 
   }
   @media screen and (min-width: 768px) {
-    color: white;
-    font-family: "Mukta Mahee";
-    font-size: 140%;
-    font-weight: bold;
-    margin-top: 15%;
+    margin-top: 12%;
     margin-left: 10%;
+    font-size: 140%;
     letter-spacing: 0.1em;
   }
 `;
 
 const WhiteNormalMainText = styled.p`
+  color: #BBBBBB;
+  font-family: "Mukta Mahee";
+  font-weight: normal;
+  letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
 
   }
   @media screen and (min-width: 768px) {
-    color: #BBBBBB;
-    font-family: "Mukta Mahee";
-    font-size: 100%;
-    font-weight: normal;
-    letter-spacing: 0.1em;
     line-height: 2;
+    font-size: 100%;
     margin-left: 12%;
   }
 `;
 
 const WhiteNormalMainTextInner = styled.p`
+  color: #BBBBBB;
+  font-family: "Mukta Mahee";
+  font-weight: normal;
+  letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
 
   }
   @media screen and (min-width: 768px) {
-    color: #BBBBBB;
-    font-family: "Mukta Mahee";
     font-size: 100%;
-    font-weight: normal;
-    letter-spacing: 0.1em;
     line-height: 2;
     margin-left: 17%;
   }
@@ -104,7 +106,7 @@ export default function Home() {
 
           {/* メインBody：要リファクタ */}
           <MainBody>
-            <WhiteBoldFirstText>Skills</WhiteBoldFirstText>
+            <WhiteBoldMainText>Skills</WhiteBoldMainText>
             <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
 
             <WhiteBoldMainText>Interest/Studying</WhiteBoldMainText>
