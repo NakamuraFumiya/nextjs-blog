@@ -58,7 +58,7 @@ const IconHover = styled.div`
 const HeaderBodyDiv = styled.div`
   @media screen and (min-width: 768px) {
     padding-left: 30%;
-    background-color: green;
+    // background-color: green;
   }
 `;
 
