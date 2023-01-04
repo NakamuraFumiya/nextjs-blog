@@ -29,20 +29,39 @@ const WhiteBoldMainText = styled.p`
     font-family: "Mukta Mahee";
     font-size: 140%;
     font-weight: bold;
-    // margin-top: 20%;
-    // margin-left: 100%;
+    margin-left: 10%;
     letter-spacing: 0.1em;
   }
 `;
 
-const WhiteNormalMainList = styled.li`
-  color: #BBBBBB;
-  font-family: "Mukta Mahee";
-  font-size: 100%;
-  font-weight: normal;
-  // line-height: 0.5;
-  letter-spacing: 0.1em;
-  line-height: 3;
+const WhiteNormalMainText = styled.p`
+  @media screen and (max-width: 767px) {
+
+  }
+  @media screen and (min-width: 768px) {
+    color: #BBBBBB;
+    font-family: "Mukta Mahee";
+    font-size: 100%;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    margin-left: 12%;
+  }
+`;
+
+const WhiteNormalMainTextInner = styled.p`
+  @media screen and (max-width: 767px) {
+
+  }
+  @media screen and (min-width: 768px) {
+    color: #BBBBBB;
+    font-family: "Mukta Mahee";
+    font-size: 100%;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    margin-left: 17%;
+  }
 `;
 
 const BodySpan = styled.div`
@@ -70,72 +89,39 @@ export default function Home() {
           {/* メインBody：要リファクタ */}
           <BodySpan></BodySpan>
           <MainBody>
-            <ul>
-              <WhiteBoldMainText>Skills</WhiteBoldMainText>
-              <WhiteNormalMainList>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainList>
-            </ul>
+            <WhiteBoldMainText>Skills</WhiteBoldMainText>
+            <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
 
-            <ul>
-              <WhiteBoldMainText>Interest/Studying</WhiteBoldMainText>
-              <WhiteNormalMainList>HTML / CSS / JavaScript / TypeScript / React / Next.js / AWS / DDD / Figma</WhiteNormalMainList>
-              <WhiteNormalMainList>Business Domain / Product Growth</WhiteNormalMainList>
-            </ul>
+            <WhiteBoldMainText>Interest/Studying</WhiteBoldMainText>
+            <WhiteNormalMainText>HTML / CSS / JavaScript / TypeScript / React / Next.js / AWS / DDD / Figma</WhiteNormalMainText>
+            <WhiteNormalMainText>Business Domain / Product Growth</WhiteNormalMainText>
 
-            <ul>
-              <WhiteBoldMainText>Carrer</WhiteBoldMainText>
-              <WhiteNormalMainList>Vanish Standard Inc. (Sep, 2022 ~ Present)</WhiteNormalMainList>
-                <ul>
-                  <WhiteNormalMainList>Development of "STAFF START" using Go</WhiteNormalMainList>
-                </ul>
-              <WhiteNormalMainList>Placole Inc. (Aug, 2020 ~ Jul, 2022)</WhiteNormalMainList>
-                <ul>
-                  <WhiteNormalMainList>Development for "Placolle Wedding" and "ViKet Town" using Ruby.</WhiteNormalMainList>
-                  <WhiteNormalMainList>Experienced in project leadership of a 5-person project for about 6 months.</WhiteNormalMainList>
-                </ul>
-              <WhiteNormalMainList>NS Solutions Tokyo Inc. (Apr, 2019 ~ Jul, 2020)</WhiteNormalMainList>
-                <ul>
-                  <WhiteNormalMainList>Building a CPU utilization monitoring system for host machines using Elasticsearch and Grafana</WhiteNormalMainList>
-                </ul>
-            </ul>
+            <WhiteBoldMainText>Carrer</WhiteBoldMainText>
+            <WhiteNormalMainText>Vanish Standard Inc. (Sep, 2022 ~ Present)</WhiteNormalMainText>
+            <WhiteNormalMainTextInner>Development of "STAFF START" using Go.</WhiteNormalMainTextInner>
 
+            <WhiteNormalMainText>Placole Inc. (Aug, 2020 ~ Jul, 2022)</WhiteNormalMainText>
+            <WhiteNormalMainTextInner>Development for "Placolle Wedding" and "ViKet Town" using Ruby.</WhiteNormalMainTextInner>
+            <WhiteNormalMainTextInner>Experienced in project leadership of a 5-person project for about 6 months.</WhiteNormalMainTextInner>
+              
+            <WhiteNormalMainText>NS Solutions Tokyo Inc. (Apr, 2019 ~ Jul, 2020)</WhiteNormalMainText>
+            <WhiteNormalMainTextInner>Building a CPU utilization monitoring system for host machines using Elasticsearch and Grafana.</WhiteNormalMainTextInner>
 
-            <ul>
             <WhiteBoldMainText>Personality</WhiteBoldMainText>
-            <WhiteNormalMainList>ISFP-A</WhiteNormalMainList>
-            <WhiteNormalMainList>Five Values for Work</WhiteNormalMainList>
-              <ul>
-                <WhiteNormalMainList>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainList>
-              </ul>
-            </ul>
+            <WhiteNormalMainText>ISFP-A</WhiteNormalMainText>
+            <WhiteNormalMainText>Five Values for Work</WhiteNormalMainText>
+            <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
 
-            <ul>
-              <WhiteBoldMainText>Writing</WhiteBoldMainText>
-              <WhiteNormalMainList>Qiita</WhiteNormalMainList>
-              <WhiteNormalMainList>zenn</WhiteNormalMainList>
-            </ul>
+            <WhiteBoldMainText>Writing</WhiteBoldMainText>
+            <WhiteNormalMainText>Qiita</WhiteNormalMainText>
+            <WhiteNormalMainText>zenn</WhiteNormalMainText>
 
-            <ul>
-              <WhiteBoldMainText>Education</WhiteBoldMainText>
-              <WhiteNormalMainList>Functional Materials Engineering</WhiteNormalMainList>
-                <ul>
-                  <WhiteNormalMainList>Ehime University</WhiteNormalMainList>
-                </ul>
-            </ul>
+            <WhiteBoldMainText>Education</WhiteBoldMainText>
+            <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
+            <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
-            <ul>
-              <WhiteBoldMainText>Contact</WhiteBoldMainText>
-              <WhiteNormalMainList>Please contact me via twitter DM (there is a twitter link in my profile).</WhiteNormalMainList>
-            </ul>
-
-            <ul>
-              <WhiteBoldMainText></WhiteBoldMainText>
-              <WhiteNormalMainList></WhiteNormalMainList>
-              <WhiteNormalMainList></WhiteNormalMainList>
-                <ul>
-                  <WhiteNormalMainList></WhiteNormalMainList>
-                </ul>
-            </ul>
-
+            <WhiteBoldMainText>Contact</WhiteBoldMainText>
+            <WhiteNormalMainText>Please contact me via twitter DM (there is a twitter link in my profile).</WhiteNormalMainText>
           </MainBody>
         </Body>
       </BackgroundColor>
