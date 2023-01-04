@@ -26,7 +26,7 @@ const ProfileImg = styled.div`
 const WhiteBoldHeaderText = styled.p`
   color: white;
   font-family: "Mukta Mahee";
-  font-size: 120%;
+  font-size: 150%;
   font-weight: bold;
   margin-top: 3%;
   letter-spacing: 0.1em;
@@ -35,7 +35,7 @@ const WhiteBoldHeaderText = styled.p`
 const WhiteNormalHeaderText = styled.p`
   color: white;
   font-family: "Mukta Mahee";
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
   line-height: 0.5;
   margin-left: 3%;
@@ -45,7 +45,12 @@ const WhiteNormalHeaderText = styled.p`
 const IconParent = styled.div`
   display: flex;
   column-gap: 6%;
-  margin-top: 12%;
+  @media screen and (max-width: 767px) {
+    margin-top: 8%;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 12%;
+  }
 `;
 
 const IconHover = styled.div`
