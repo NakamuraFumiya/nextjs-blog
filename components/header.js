@@ -38,7 +38,7 @@ const WhiteNormalHeaderText = styled.p`
   font-size: 100%;
   font-weight: normal;
   line-height: 0.5;
-  margin-left: 3%;
+  margin-left: 1%;
   letter-spacing: 0.1em;
 `;
 
