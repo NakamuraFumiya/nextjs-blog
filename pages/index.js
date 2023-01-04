@@ -20,15 +20,31 @@ const MainBody = styled.div`
   }
 `;
 
+const WhiteBoldFirstText = styled.p`
+  @media screen and (max-width: 767px) {
+
+  }
+  @media screen and (min-width: 768px) {
+    color: white;
+    font-family: "Mukta Mahee";
+    font-size: 140%;
+    font-weight: bold;
+    margin-top: 12%;
+    margin-left: 10%;
+    letter-spacing: 0.1em;
+  }
+`;
+
 const WhiteBoldMainText = styled.p`
   @media screen and (max-width: 767px) {
 
   }
   @media screen and (min-width: 768px) {
-    color: #FFFFAA;
+    color: white;
     font-family: "Mukta Mahee";
     font-size: 140%;
     font-weight: bold;
+    margin-top: 15%;
     margin-left: 10%;
     letter-spacing: 0.1em;
   }
@@ -65,7 +81,7 @@ const WhiteNormalMainTextInner = styled.p`
 `;
 
 const BodySpan = styled.div`
-  padding-bottom: 10000px;
+  padding-bottom: 15%;
 `;
 
 const Template = styled.div`
@@ -87,9 +103,8 @@ export default function Home() {
           <Header />
 
           {/* メインBody：要リファクタ */}
-          <BodySpan></BodySpan>
           <MainBody>
-            <WhiteBoldMainText>Skills</WhiteBoldMainText>
+            <WhiteBoldFirstText>Skills</WhiteBoldFirstText>
             <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
 
             <WhiteBoldMainText>Interest/Studying</WhiteBoldMainText>
@@ -113,15 +128,21 @@ export default function Home() {
             <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
 
             <WhiteBoldMainText>Writing</WhiteBoldMainText>
-            <WhiteNormalMainText>Qiita</WhiteNormalMainText>
-            <WhiteNormalMainText>zenn</WhiteNormalMainText>
+            <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
+              <WhiteNormalMainText>Qiita</WhiteNormalMainText>
+            </Link>
+            <Link href="https://zenn.dev/nakamura_fumiya" target="_blank">
+              <WhiteNormalMainText>zenn</WhiteNormalMainText>
+            </Link>
 
             <WhiteBoldMainText>Education</WhiteBoldMainText>
             <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
             <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
             <WhiteBoldMainText>Contact</WhiteBoldMainText>
-            <WhiteNormalMainText>Please contact me via twitter DM (there is a twitter link in my profile).</WhiteNormalMainText>
+            <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">twitter DM</Link></WhiteNormalMainText>
+
+            <BodySpan></BodySpan>
           </MainBody>
         </Body>
       </BackgroundColor>
