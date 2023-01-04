@@ -18,14 +18,13 @@ const Body = styled.div`
 `;
 
 const Header = styled.div`
-  flex-grow: 0.25;
-  position: fixed;
-  top: 0;
   @media screen and (max-width: 767px) {
     margin-top: 10%;
     margin-left: 35%;
   }
   @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 0;
     margin-top: 4%;
     margin-left: 4%;
   }
@@ -37,7 +36,6 @@ const ProfileImg = styled.div`
 `;
 
 const MainBody = styled.div`
-  flex-grow: 0.75;
   @media screen and (max-width: 767px) {
     padding-top: 60%;
   }
@@ -92,7 +90,10 @@ const Center = styled.div`
 `;
 
 const SideBodyDiv = styled.div`
-  padding-left: 30%;
+  @media screen and (min-width: 768px) {
+    padding-left: 30%;
+    background-color: green;
+  }
 `;
 
 export default function Home() {
@@ -124,7 +125,7 @@ export default function Home() {
                 </Link>
             </IconParent>
           </Header>
-          {/* <SideBodyDiv></SideBodyDiv> */}
+          <SideBodyDiv></SideBodyDiv>
           
 
           {/* メインBody：要リファクタ */}
