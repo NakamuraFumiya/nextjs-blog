@@ -33,14 +33,7 @@ const Header = styled.div`
 
 const ProfileImg = styled.div`
   margin-top: 8%;
-`;
-
-const Center = styled.div`
-  text-align: center;
-`;
-
-const SideBodyDiv = styled.div`
-  padding-left: 30%;
+  margin-left: 8%;
 `;
 
 const MainBody = styled.div`
@@ -55,7 +48,8 @@ const WhiteBoldSideText = styled.p`
   font-family: "Mukta Mahee";
   font-size: 120%;
   font-weight: bold;
-  margin-top: 1%;
+  margin-top: 3%;
+  letter-spacing: 0.1em;
 `;
 
 const WhiteNormalSideText = styled.p`
@@ -64,6 +58,8 @@ const WhiteNormalSideText = styled.p`
   font-size: 80%;
   font-weight: normal;
   line-height: 0.5;
+  margin-left: 3%;
+  letter-spacing: 0.1em;
 `;
 
 const WhiteNormalMainText = styled.p`
@@ -80,6 +76,7 @@ const WhiteNormalMainText = styled.p`
 const IconParent = styled.div`
   display: flex;
   column-gap: 6%;
+  margin-top: 12%;
 `;
 
 const IconHover = styled.div`
@@ -87,6 +84,15 @@ const IconHover = styled.div`
   opacity: 0.5;
   transition: 0.4s;
 }
+`;
+
+// 使ってない
+const Center = styled.div`
+  text-align: center;
+`;
+
+const SideBodyDiv = styled.div`
+  padding-left: 30%;
 `;
 
 export default function Home() {
