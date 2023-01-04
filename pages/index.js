@@ -20,6 +20,7 @@ const WhiteBoldMainText = styled.p`
   color: white;
   font-family: "Mukta Mahee";
   font-weight: bold;
+  letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
     margin-top: 5%;
     margin-left: 5%;
@@ -28,7 +29,6 @@ const WhiteBoldMainText = styled.p`
     margin-top: 12%;
     margin-left: 10%;
     font-size: 140%;
-    letter-spacing: 0.1em;
   }
 `;
 
@@ -36,14 +36,15 @@ const WhiteNormalMainText = styled.p`
   color: #BBBBBB;
   font-family: "Mukta Mahee";
   font-weight: normal;
-  letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
     margin-left: 7%;
+    letter-spacing: 0.01em;
   }
   @media screen and (min-width: 768px) {
     line-height: 2;
     font-size: 100%;
     margin-left: 12%;
+    letter-spacing: 0.1em;
   }
 `;
 
@@ -51,14 +52,15 @@ const WhiteNormalMainTextInner = styled.p`
   color: #BBBBBB;
   font-family: "Mukta Mahee";
   font-weight: normal;
-  letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
     margin-left: 10%;
+    letter-spacing: 0.01em;
   }
   @media screen and (min-width: 768px) {
     font-size: 100%;
     line-height: 2;
     margin-left: 17%;
+    letter-spacing: 0.1em;
   }
 `;
 
