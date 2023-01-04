@@ -16,33 +16,13 @@ const Body = styled.div`
   }
 `;
 
-const MainBody = styled.div`
-  @media screen and (max-width: 767px) {
-    // padding-top: 60%;
-  }
-`;
-
-const WhiteBoldFirstText = styled.p`
-  @media screen and (max-width: 767px) {
-
-  }
-  @media screen and (min-width: 768px) {
-    color: white;
-    font-family: "Mukta Mahee";
-    font-size: 140%;
-    font-weight: bold;
-    margin-top: 12%;
-    margin-left: 10%;
-    letter-spacing: 0.1em;
-  }
-`;
-
 const WhiteBoldMainText = styled.p`
   color: white;
   font-family: "Mukta Mahee";
   font-weight: bold;
   @media screen and (max-width: 767px) {
-
+    margin-top: 5%;
+    margin-left: 5%;
   }
   @media screen and (min-width: 768px) {
     margin-top: 12%;
@@ -58,7 +38,7 @@ const WhiteNormalMainText = styled.p`
   font-weight: normal;
   letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
-
+    margin-left: 7%;
   }
   @media screen and (min-width: 768px) {
     line-height: 2;
@@ -73,7 +53,7 @@ const WhiteNormalMainTextInner = styled.p`
   font-weight: normal;
   letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
-
+    margin-left: 10%;
   }
   @media screen and (min-width: 768px) {
     font-size: 100%;
@@ -86,26 +66,18 @@ const BodySpan = styled.div`
   padding-bottom: 15%;
 `;
 
-const Template = styled.div`
-  @media screen and (max-width: 767px) {
-
-  }
-  @media screen and (min-width: 768px) {
-
-  }
-`;
-
 export default function Home() {
   return (
     <>
       <HeadComponent />
 
       <BackgroundColor>
-        <Body>          
+        <Body>
+          <br />          
           <Header />
 
           {/* メインBody：要リファクタ */}
-          <MainBody>
+          <div>
             <WhiteBoldMainText>Skills</WhiteBoldMainText>
             <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
 
@@ -142,10 +114,10 @@ export default function Home() {
             <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
             <WhiteBoldMainText>Contact</WhiteBoldMainText>
-            <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">twitter DM</Link></WhiteNormalMainText>
+            <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">twitter DM</Link>.</WhiteNormalMainText>
 
             <BodySpan></BodySpan>
-          </MainBody>
+          </div>
         </Body>
       </BackgroundColor>
     </>
