@@ -68,6 +68,10 @@ const BodySpan = styled.div`
   padding-bottom: 15%;
 `;
 
+const LightBlueLink = styled.a`
+  color: #bce2e8;
+`
+
 export default function Home() {
   return (
     <>
@@ -104,15 +108,15 @@ export default function Home() {
             <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
 
             <WhiteBoldMainText>Writing</WhiteBoldMainText>
-            <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank">Qiita</Link></WhiteNormalMainText>
-            <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank">zenn</Link></WhiteNormalMainText>
+            <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank"><LightBlueLink>Qiita</LightBlueLink></Link></WhiteNormalMainText>
+            <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank"><LightBlueLink>zenn</LightBlueLink></Link></WhiteNormalMainText>
 
             <WhiteBoldMainText>Education</WhiteBoldMainText>
             <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
             <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
             <WhiteBoldMainText>Contact</WhiteBoldMainText>
-            <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">twitter DM</Link>.</WhiteNormalMainText>
+            <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank"><LightBlueLink>twitter DM</LightBlueLink></Link>.</WhiteNormalMainText>
 
             <BodySpan></BodySpan>
           </div>
