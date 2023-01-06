@@ -104,12 +104,8 @@ export default function Home() {
             <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
 
             <WhiteBoldMainText>Writing</WhiteBoldMainText>
-            <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
-              <WhiteNormalMainText>Qiita</WhiteNormalMainText>
-            </Link>
-            <Link href="https://zenn.dev/nakamura_fumiya" target="_blank">
-              <WhiteNormalMainText>zenn</WhiteNormalMainText>
-            </Link>
+            <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank">Qiita</Link></WhiteNormalMainText>
+            <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank">zenn</Link></WhiteNormalMainText>
 
             <WhiteBoldMainText>Education</WhiteBoldMainText>
             <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
