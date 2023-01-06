@@ -21,6 +21,7 @@ const HeaderWrapper = styled.div`
 const ProfileImg = styled.div`
   margin-top: 8%;
   margin-left: 8%;
+  margin-bottom: 2%;
 `;
 
 const WhiteBoldHeaderText = styled.p`
