@@ -4,12 +4,6 @@ import styled from "styled-components";
 import { Header } from '../components/header';
 import { HeadComponent } from '../components/head';
 
-const BackgroundColor = styled.div`
-  background-color: black;
-  width: 100%;
-  height: 100%;
-`;
-
 const Body = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
@@ -77,51 +71,49 @@ export default function Home() {
     <>
       <HeadComponent />
 
-      <BackgroundColor>
-        <Body>
-          <br />          
-          <Header />
+      <Body>
+        <br />          
+        <Header />
 
-          {/* メインBody：要リファクタ */}
-          <div>
-            <WhiteBoldMainText>Skills</WhiteBoldMainText>
-            <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
+        {/* メインBody：要リファクタ */}
+        <div>
+          <WhiteBoldMainText>Skills</WhiteBoldMainText>
+          <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
 
-            <WhiteBoldMainText>Interest/Studying</WhiteBoldMainText>
-            <WhiteNormalMainText>HTML / CSS / JavaScript / TypeScript / React / Next.js / AWS / DDD / Figma</WhiteNormalMainText>
-            <WhiteNormalMainText>Business Domain / Product Growth</WhiteNormalMainText>
+          <WhiteBoldMainText>Interest/Studying</WhiteBoldMainText>
+          <WhiteNormalMainText>HTML / CSS / JavaScript / TypeScript / React / Next.js / AWS / DDD / Figma</WhiteNormalMainText>
+          <WhiteNormalMainText>Business Domain / Product Growth</WhiteNormalMainText>
 
-            <WhiteBoldMainText>Carrer</WhiteBoldMainText>
-            <WhiteNormalMainText>Vanish Standard Inc. (Sep, 2022 ~ Present)</WhiteNormalMainText>
-            <WhiteNormalMainTextInner>Development of "STAFF START" using Go.</WhiteNormalMainTextInner>
+          <WhiteBoldMainText>Carrer</WhiteBoldMainText>
+          <WhiteNormalMainText>Vanish Standard Inc. (Sep, 2022 ~ Present)</WhiteNormalMainText>
+          <WhiteNormalMainTextInner>Development of "STAFF START" using Go.</WhiteNormalMainTextInner>
 
-            <WhiteNormalMainText>Placole Inc. (Aug, 2020 ~ Jul, 2022)</WhiteNormalMainText>
-            <WhiteNormalMainTextInner>Development for "Placolle Wedding" and "ViKet Town" using Ruby.</WhiteNormalMainTextInner>
-            <WhiteNormalMainTextInner>Experienced in project leadership of a 5-person project for about 6 months.</WhiteNormalMainTextInner>
-              
-            <WhiteNormalMainText>NS Solutions Tokyo Inc. (Apr, 2019 ~ Jul, 2020)</WhiteNormalMainText>
-            <WhiteNormalMainTextInner>Building a CPU utilization monitoring system for host machines using Elasticsearch and Grafana.</WhiteNormalMainTextInner>
+          <WhiteNormalMainText>Placole Inc. (Aug, 2020 ~ Jul, 2022)</WhiteNormalMainText>
+          <WhiteNormalMainTextInner>Development for "Placolle Wedding" and "ViKet Town" using Ruby.</WhiteNormalMainTextInner>
+          <WhiteNormalMainTextInner>Experienced in project leadership of a 5-person project for about 6 months.</WhiteNormalMainTextInner>
+            
+          <WhiteNormalMainText>NS Solutions Tokyo Inc. (Apr, 2019 ~ Jul, 2020)</WhiteNormalMainText>
+          <WhiteNormalMainTextInner>Building a CPU utilization monitoring system for host machines using Elasticsearch and Grafana.</WhiteNormalMainTextInner>
 
-            <WhiteBoldMainText>Personality</WhiteBoldMainText>
-            <WhiteNormalMainText>ISFP-A</WhiteNormalMainText>
-            <WhiteNormalMainText>Five Values for Work</WhiteNormalMainText>
-            <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
+          <WhiteBoldMainText>Personality</WhiteBoldMainText>
+          <WhiteNormalMainText>ISFP-A</WhiteNormalMainText>
+          <WhiteNormalMainText>Five Values for Work</WhiteNormalMainText>
+          <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
 
-            <WhiteBoldMainText>Writing</WhiteBoldMainText>
-            <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank"><LightBlueLink>Qiita</LightBlueLink></Link></WhiteNormalMainText>
-            <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank"><LightBlueLink>zenn</LightBlueLink></Link></WhiteNormalMainText>
+          <WhiteBoldMainText>Writing</WhiteBoldMainText>
+          <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank"><LightBlueLink>Qiita</LightBlueLink></Link></WhiteNormalMainText>
+          <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank"><LightBlueLink>zenn</LightBlueLink></Link></WhiteNormalMainText>
 
-            <WhiteBoldMainText>Education</WhiteBoldMainText>
-            <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
-            <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
+          <WhiteBoldMainText>Education</WhiteBoldMainText>
+          <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
+          <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
-            <WhiteBoldMainText>Contact</WhiteBoldMainText>
-            <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank"><LightBlueLink>twitter DM</LightBlueLink></Link>.</WhiteNormalMainText>
+          <WhiteBoldMainText>Contact</WhiteBoldMainText>
+          <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank"><LightBlueLink>twitter DM</LightBlueLink></Link>.</WhiteNormalMainText>
 
-            <BodySpan></BodySpan>
-          </div>
-        </Body>
-      </BackgroundColor>
+          <BodySpan></BodySpan>
+        </div>
+      </Body>
     </>
   )
 }
