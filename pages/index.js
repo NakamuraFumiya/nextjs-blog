@@ -72,7 +72,6 @@ export default function Home() {
       <HeadComponent />
 
       <Body>
-        <br />          
         <Header />
 
         <div>
