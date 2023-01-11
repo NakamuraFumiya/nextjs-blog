@@ -104,7 +104,6 @@ export const BodyComponent = () => (
       <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
       <WhiteBoldMainText>Contact</WhiteBoldMainText>
-      <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank" passHref legacyBehavior><LightBlueLink>twitter DM</LightBlueLink></Link>.</WhiteNormalMainText>
 
       <BodySpan></BodySpan>
     </div>
