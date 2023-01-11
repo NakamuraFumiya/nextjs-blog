@@ -7,7 +7,7 @@ import { TwitterIconImage } from './twitter_icon';
 
 const HeaderWrapper = styled.div`
   @media screen and (max-width: 767px) {
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 25%;
   }
   @media screen and (min-width: 768px) {
