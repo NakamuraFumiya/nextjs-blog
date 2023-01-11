@@ -75,7 +75,6 @@ export default function Home() {
         <br />          
         <Header />
 
-        {/* メインBody：要リファクタ */}
         <div>
           <WhiteBoldMainText>Skills</WhiteBoldMainText>
           <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
@@ -101,15 +100,15 @@ export default function Home() {
           <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
 
           <WhiteBoldMainText>Writing</WhiteBoldMainText>
-          <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank"><LightBlueLink>Qiita</LightBlueLink></Link></WhiteNormalMainText>
-          <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank"><LightBlueLink>zenn</LightBlueLink></Link></WhiteNormalMainText>
+          <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank" passHref legacyBehavior><LightBlueLink>Qiita</LightBlueLink></Link></WhiteNormalMainText>
+          <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank" passHref legacyBehavior><LightBlueLink>zenn</LightBlueLink></Link></WhiteNormalMainText>
 
           <WhiteBoldMainText>Education</WhiteBoldMainText>
           <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
           <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
           <WhiteBoldMainText>Contact</WhiteBoldMainText>
-          <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank"><LightBlueLink>twitter DM</LightBlueLink></Link>.</WhiteNormalMainText>
+          <WhiteNormalMainText>Please contact me via <Link href="https://twitter.com/NakamuraFumiya3" target="_blank" passHref legacyBehavior><LightBlueLink>twitter DM</LightBlueLink></Link>.</WhiteNormalMainText>
 
           <BodySpan></BodySpan>
         </div>
