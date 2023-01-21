@@ -103,8 +103,6 @@ export const BodyComponent = () => (
       <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
       <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
 
-      <WhiteBoldMainText>Contact</WhiteBoldMainText>
-
       <BodySpan></BodySpan>
     </div>
   </Body>
