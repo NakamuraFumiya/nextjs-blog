@@ -26,7 +26,6 @@ const ProfileImg = styled.div`
 
 const WhiteBoldHeaderText = styled.p`
   color: white;
-  font-family: "Mukta Mahee";
   font-size: 150%;
   font-weight: bold;
   margin-top: 3%;
@@ -35,7 +34,6 @@ const WhiteBoldHeaderText = styled.p`
 
 const WhiteNormalHeaderText = styled.p`
   color: white;
-  font-family: "Mukta Mahee";
   font-size: 100%;
   font-weight: normal;
   line-height: 0.5;

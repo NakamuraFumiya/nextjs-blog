@@ -12,7 +12,6 @@ const Body = styled.div`
 
 const WhiteBoldMainText = styled.p`
   color: white;
-  font-family: "Mukta Mahee";
   font-weight: bold;
   letter-spacing: 0.1em;
   @media screen and (max-width: 767px) {
@@ -28,7 +27,6 @@ const WhiteBoldMainText = styled.p`
 
 const WhiteNormalMainText = styled.p`
   color: #BBBBBB;
-  font-family: "Mukta Mahee";
   font-weight: normal;
   @media screen and (max-width: 767px) {
     margin-left: 7%;
@@ -44,7 +42,6 @@ const WhiteNormalMainText = styled.p`
 
 const WhiteNormalMainTextInner = styled.p`
   color: #BBBBBB;
-  font-family: "Mukta Mahee";
   font-weight: normal;
   @media screen and (max-width: 767px) {
     margin-left: 10%;
