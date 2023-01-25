@@ -19,9 +19,17 @@ const HeaderWrapper = styled.div`
 `;
 
 const ProfileImg = styled.div`
-  margin-top: 8%;
-  margin-left: 8%;
-  margin-bottom: 2%;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 8%;
+    margin-left: 12%;
+    margin-bottom: 10%;
+  }
 `;
 
 const WhiteBoldHeaderText = styled.p`

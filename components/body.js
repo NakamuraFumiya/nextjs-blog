@@ -29,7 +29,7 @@ const WhiteNormalMainText = styled.p`
   color: #BBBBBB;
   font-weight: normal;
   @media screen and (max-width: 767px) {
-    margin-left: 7%;
+    margin-left: 10%;
     letter-spacing: 0.01em;
   }
   @media screen and (min-width: 768px) {
@@ -44,7 +44,7 @@ const WhiteNormalMainTextInner = styled.p`
   color: #BBBBBB;
   font-weight: normal;
   @media screen and (max-width: 767px) {
-    margin-left: 10%;
+    margin-left: 15%;
     letter-spacing: 0.01em;
   }
   @media screen and (min-width: 768px) {
@@ -67,8 +67,8 @@ export const BodyComponent = () => (
   <>
     <Body>
     <Header />
-
-    <div>
+      <br />
+      <div>
       <WhiteBoldMainText>Skills</WhiteBoldMainText>
       <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
 
