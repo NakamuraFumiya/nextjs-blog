@@ -18,7 +18,7 @@ export const HeadComponent = () => (
 
       {/*Twitterカードの設定*/}
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:image" content="/images/fumiya-circle.png" />
+      <meta name="twitter:image" content="https://nextjs-blog-fumiya.s3.ap-northeast-1.amazonaws.com/fumiya-circle.png" />
       <meta name="twitter:site" content="@NakamuraFumiya3" />
 
       <link rel="canonical" href="https://www.fumiyanakamura.com/" />
