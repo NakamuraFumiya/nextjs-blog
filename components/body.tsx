@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styled from "styled-components";
-
-import { Header } from './header';
+import { PageWithSideBar } from "./ui/Layout/SideBar/PageWithSideBar";
 
 
 const Body = styled.div`
@@ -66,7 +65,7 @@ const LightBlueLink = styled.a`
 export const BodyComponent = () => (
   <>
     <Body>
-    <Header />
+    <PageWithSideBar />
       <br />
       <div>
       <WhiteBoldMainText>Skills</WhiteBoldMainText>
