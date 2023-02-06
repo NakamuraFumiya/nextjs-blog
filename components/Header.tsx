@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import styled from "styled-components";
 
-import { ProfileImage } from './ui/Icon/ProfileIcon';
-import { GithubIconImage } from './ui/Icon/GithubIcon';
-import { TwitterIconImage } from './ui/Icon/TwitterIcon';
+import { ProfileIcon } from './ui/Icon/ProfileIcon';
+import { GithubIcon } from './ui/Icon/GithubIcon';
+import { TwitterIcon } from './ui/Icon/TwitterIcon';
 
 const HeaderWrapper = styled.div`
   @media screen and (max-width: 767px) {
@@ -78,7 +78,7 @@ export const Header = () => (
   <>
     <HeaderWrapper>
       <ProfileImg>
-        <ProfileImage />
+        <ProfileIcon x={144} y={144} />
       </ProfileImg>
       <WhiteBoldHeaderText>Fumiya Nakamura</WhiteBoldHeaderText>
       <WhiteNormalHeaderText>I’m a back-end developer.</WhiteNormalHeaderText>
@@ -86,12 +86,12 @@ export const Header = () => (
       <IconParent>
           <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
             <IconHover>
-              <TwitterIconImage />
+              <TwitterIcon x={20} y={20} />
             </IconHover>
           </Link>
           <Link href="https://github.com/NakamuraFumiya" target="_blank">
             <IconHover>
-              <GithubIconImage />
+              <GithubIcon x={20} y={20} />
             </IconHover>
           </Link>
       </IconParent>

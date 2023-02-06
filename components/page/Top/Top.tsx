@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-import { HeadComponent } from '../../head';
+import { HeadComponent } from '../../Head';
 import { PageWithSideBar } from "../../ui/Layout/SideBar/PageWithSideBar";
 
 const Body = styled.div`
