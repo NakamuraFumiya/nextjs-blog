@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export const HeadComponent = () => (
+export const Header = () => (
   <>
     <Head>
       <title>Fumiya Nakamura</title>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-import { HeadComponent } from '../../Head';
+import { Header } from '../../functional/Header/Head';
 import { PageWithSideBar } from "../../ui/Layout/SideBar/PageWithSideBar";
 
 const Body = styled.div`
@@ -66,7 +66,7 @@ const LightBlueLink = styled.a`
 export const Top = () => {
   return (
     <>
-      <HeadComponent />
+      <Header />
 
       <Body>
         <PageWithSideBar />
