@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import styled from "styled-components";
 
-import { ProfileImage } from '../../Icon/ProfileIcon';
-import { GithubIconImage } from '../../Icon/GithubIcon';
-import { TwitterIconImage } from '../../Icon/TwitterIcon';
+import { ProfileIcon } from '../../Icon/ProfileIcon';
+import { GithubIcon } from '../../Icon/GithubIcon';
+import { TwitterIcon } from '../../Icon/TwitterIcon';
 
-const HeaderWrapper = styled.div`
+const SideBarWrapper = styled.div`
   @media screen and (max-width: 767px) {
     margin-top: 20%;
     margin-left: 25%;
@@ -18,8 +18,7 @@ const HeaderWrapper = styled.div`
   }
 `;
 
-const ProfileImg = styled.div`
-
+const ProfileIconWrapper = styled.div`
   @media screen and (max-width: 767px) {
     margin-top: 8%;
     margin-left: 8%;
@@ -67,7 +66,7 @@ const IconHover = styled.div`
 }
 `;
 
-const HeaderBodyDiv = styled.div`
+const SideBarSpacer = styled.div`
   @media screen and (min-width: 768px) {
     padding-left: 30%;
   }
@@ -75,26 +74,26 @@ const HeaderBodyDiv = styled.div`
 
 export const PageWithSideBar = () => (
   <>
-    <HeaderWrapper>
-      <ProfileImg>
-        <ProfileImage x={144} y={144} />
-      </ProfileImg>
+    <SideBarWrapper>
+      <ProfileIconWrapper>
+        <ProfileIcon x={144} y={144} />
+      </ProfileIconWrapper>
       <WhiteBoldHeaderText>Fumiya Nakamura</WhiteBoldHeaderText>
       <WhiteNormalHeaderText>I’m a back-end developer.</WhiteNormalHeaderText>
       <WhiteNormalHeaderText>Born in 1996.</WhiteNormalHeaderText>
       <IconParent>
         <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <TwitterIconImage x={20} y={20} />
+            <TwitterIcon x={20} y={20} />
           </IconHover>
         </Link>
         <Link href="https://github.com/NakamuraFumiya" target="_blank">
           <IconHover>
-            <GithubIconImage x={20} y={20} />
+            <GithubIcon x={20} y={20} />
           </IconHover>
         </Link>
       </IconParent>
-    </HeaderWrapper>
-    <HeaderBodyDiv></HeaderBodyDiv>
+    </SideBarWrapper>
+    <SideBarSpacer />
   </>
 );
