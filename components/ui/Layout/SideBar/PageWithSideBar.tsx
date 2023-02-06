@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import styled from "styled-components";
 
-import { ProfileImage } from '../../../profile';
-import { GithubIconImage } from '../../../github_icon';
-import { TwitterIconImage } from '../../../twitter_icon';
+import { ProfileImage } from '../../Icon/ProfileIcon';
+import { GithubIconImage } from '../../Icon/GithubIcon';
+import { TwitterIconImage } from '../../Icon/TwitterIcon';
 
 const HeaderWrapper = styled.div`
   @media screen and (max-width: 767px) {
