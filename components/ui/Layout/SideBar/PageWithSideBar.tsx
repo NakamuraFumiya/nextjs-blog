@@ -77,7 +77,7 @@ export const PageWithSideBar = () => (
   <>
     <HeaderWrapper>
       <ProfileImg>
-        <ProfileImage />
+        <ProfileImage x={144} y={144} />
       </ProfileImg>
       <WhiteBoldHeaderText>Fumiya Nakamura</WhiteBoldHeaderText>
       <WhiteNormalHeaderText>I’m a back-end developer.</WhiteNormalHeaderText>
@@ -85,12 +85,12 @@ export const PageWithSideBar = () => (
       <IconParent>
         <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <TwitterIconImage />
+            <TwitterIconImage x={20} y={20} />
           </IconHover>
         </Link>
         <Link href="https://github.com/NakamuraFumiya" target="_blank">
           <IconHover>
-            <GithubIconImage />
+            <GithubIconImage x={20} y={20} />
           </IconHover>
         </Link>
       </IconParent>

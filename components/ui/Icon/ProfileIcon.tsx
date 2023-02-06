@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-export const ProfileImage = () => (
+export const ProfileImage = ({x, y}: { x: number; y: number }) => (
   <Image
     src="/images/fumiya-circle.png"
-    height={144}
-    width={144}
+    width={x}
+    height={y}
     alt="Fumiya Nakamura"
   />
 );

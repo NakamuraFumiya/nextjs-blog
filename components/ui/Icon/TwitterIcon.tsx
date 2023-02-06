@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-export const TwitterIconImage = () => (
+export const TwitterIconImage = ({x, y}: { x: number; y: number }) => (
   <Image
     src="/images/twitter-icon.png"
-    height={20}
-    width={20}
+    width={x}
+    height={y}
     alt="Twitter Icon"
   />
 );

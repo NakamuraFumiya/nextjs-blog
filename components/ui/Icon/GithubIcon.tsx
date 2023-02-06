@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-export const GithubIconImage = () => (
+export const GithubIconImage = ({x, y}: {x: number; y: number}) => (
   <Image
     src="/images/github-icon.png"
-    height={20}
-    width={20}
+    width={x}
+    height={y}
     alt="Github Icon"
   />
 );
