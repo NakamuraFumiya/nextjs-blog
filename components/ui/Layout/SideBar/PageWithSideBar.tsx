@@ -31,12 +31,11 @@ const ProfileIconWrapper = styled.div`
   }
 `;
 
-const WhiteBoldHeaderText = styled.p`
+const H1 = styled.h1`
   color: white;
-  font-size: 150%;
-  font-weight: bold;
-  margin-top: 3%;
-  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  letter-spacing: 0.2rem;
 `;
 
 const WhiteNormalHeaderText = styled.p`
@@ -78,7 +77,7 @@ export const PageWithSideBar = () => (
       <ProfileIconWrapper>
         <ProfileIcon x={144} y={144} />
       </ProfileIconWrapper>
-      <WhiteBoldHeaderText>Fumiya Nakamura</WhiteBoldHeaderText>
+      <H1>Fumiya Nakamura</H1>
       <WhiteNormalHeaderText>I’m a back-end developer.</WhiteNormalHeaderText>
       <WhiteNormalHeaderText>Born in 1996.</WhiteNormalHeaderText>
       <IconParent>
