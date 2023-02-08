@@ -103,11 +103,6 @@ export const PageWithSideBar = () => (
             <IconImage x={20} y={20} imageURL={"/images/qiita-icon.png"}/>
           </IconHover>
         </Link>
-        <Link href="https://note.com/fumiya_nakamura" target="_blank">
-          <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/note-icon.png"}/>
-          </IconHover>
-        </Link>
       </IconParent>
     </SideBarWrapper>
     <SideBarSpacer />
