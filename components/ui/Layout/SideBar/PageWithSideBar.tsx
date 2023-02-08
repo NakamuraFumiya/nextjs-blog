@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styled from "styled-components";
 import { ProfileIcon } from '../../Icon/ProfileIcon';
 import { GithubIcon } from '../../Icon/GithubIcon';
-import { TwitterIcon } from '../../Icon/TwitterIcon';
+import {IconImage} from "../../Icon/IconImage";
 
 const SideBarWrapper = styled.div`
   @media screen and (max-width: 767px) {
@@ -79,7 +79,7 @@ export const PageWithSideBar = () => (
   <>
     <SideBarWrapper>
       <ProfileIconWrapper>
-        <ProfileIcon x={144} y={144} />
+        <IconImage x={144} y={144} imageURL={"/images/fumiya-circle.png"}/>
       </ProfileIconWrapper>
       <ProfileName>Fumiya Nakamura</ProfileName>
       <ProfileDescription>I’m a back-end developer.</ProfileDescription>
@@ -87,12 +87,27 @@ export const PageWithSideBar = () => (
       <IconParent>
         <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <TwitterIcon x={20} y={20} />
+            <IconImage x={20} y={20} imageURL={"/images/twitter-icon.png"}/>
           </IconHover>
         </Link>
         <Link href="https://github.com/NakamuraFumiya" target="_blank">
           <IconHover>
-            <GithubIcon x={20} y={20} />
+            <IconImage x={20} y={20} imageURL={"/images/github-icon.png"}/>
+          </IconHover>
+        </Link>
+        <Link href="https://zenn.dev/nakamura_fumiya" target="_blank">
+          <IconHover>
+            <IconImage x={20} y={20} imageURL={"/images/zenn-icon.png"}/>
+          </IconHover>
+        </Link>
+        <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
+          <IconHover>
+            <IconImage x={20} y={20} imageURL={"/images/Qiita-icon.png"}/>
+          </IconHover>
+        </Link>
+        <Link href="https://note.com/fumiya_nakamura" target="_blank">
+          <IconHover>
+            <IconImage x={20} y={20} imageURL={"/images/note-icon.png"}/>
           </IconHover>
         </Link>
       </IconParent>
