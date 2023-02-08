@@ -100,7 +100,7 @@ export const PageWithSideBar = () => (
         </Link>
         <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/Qiita-icon.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/qiita-icon.png"}/>
           </IconHover>
         </Link>
         <Link href="https://note.com/fumiya_nakamura" target="_blank">
