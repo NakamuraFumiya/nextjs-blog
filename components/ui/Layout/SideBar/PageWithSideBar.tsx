@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import styled from "styled-components";
-import { ProfileIcon } from '../../Icon/ProfileIcon';
-import { GithubIcon } from '../../Icon/GithubIcon';
 import {IconImage} from "../../Icon/IconImage";
 
 const SideBarWrapper = styled.div`
