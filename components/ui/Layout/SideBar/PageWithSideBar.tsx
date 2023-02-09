@@ -25,22 +25,47 @@ const ProfileIconWrapper = styled.div`
     margin-left: 1.8rem;
     margin-bottom: 1.5rem;
   }
+  @media screen and (min-width: 1024px) {
+    margin-top: 1.2rem;
+    margin-left: 4rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const ProfileName = styled.p`
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.2rem;
+  @media screen and (min-width: 768px) {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+  }
+  @media screen and (min-width: 1024px) {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+  }
 `;
 
 const ProfileDescription = styled.p`
-  color: white;
-  line-height: 0.6rem;
-  margin-left: 0.2rem;
-  letter-spacing: 0.13rem;
+  @media screen and (min-width: 768px) {
+    color: white;
+    line-height: 0.6rem;
+    margin-left: 0.2rem;
+    letter-spacing: 0.13rem;
+  }
+  @media screen and (min-width: 1024px) {
+    color: white;
+    line-height: 0.6rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.13rem;
+  }
 `;
 
 const IconParent = styled.div`
@@ -51,6 +76,10 @@ const IconParent = styled.div`
   }
   @media screen and (min-width: 768px) {
     margin-top: 1.8rem;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 1.8rem;
+    margin-left: 1rem;
   }
 `;
 

@@ -23,35 +23,54 @@ const WhiteBoldMainText = styled.h1`
     margin-left: 5rem;
     font-size: 1.4rem;
   }
+  @media screen and (min-width: 1024px) {
+    margin-top: 6rem;
+    margin-left: 20rem;
+    font-size: 2rem;
+  }
 `;
 
 const WhiteNormalMainText = styled.h2`
   color: #BBBBBB;
   font-weight: normal;
-  font-size: 1rem;
   @media screen and (max-width: 767px) {
     margin-left: 2.5rem;
     letter-spacing: 0.01rem;
+    font-size: 1rem;
   }
   @media screen and (min-width: 768px) {
     line-height: 2;
     margin-left: 7rem;
     letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 1024px) {
+    line-height: 2;
+    margin-left: 22rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
   }
 `;
 
 const WhiteNormalMainTextInner = styled.h3`
   color: #BBBBBB;
   font-weight: normal;
-  font-size: 1rem;
   @media screen and (max-width: 767px) {
     margin-left: 3.65rem;
     letter-spacing: 0.01rem;
+    font-size: 1rem;
   }
   @media screen and (min-width: 768px) {
     line-height: 2;
     margin-left: 8.4rem;
     letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    line-height: 2;
+    margin-left: 24.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
   }
 `;
 
