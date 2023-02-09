@@ -10,53 +10,59 @@ const Body = styled.div`
   }
 `;
 
-const WhiteBoldMainText = styled.p`
+const WhiteBoldMainText = styled.h1`
   color: white;
-  font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14rem;
   @media screen and (max-width: 767px) {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    font-size: 1rem;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 12%;
-    margin-left: 10%;
-    font-size: 140%;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    font-size: 1.4rem;
   }
 `;
 
-const WhiteNormalMainText = styled.p`
+const WhiteNormalMainText = styled.h2`
   color: #BBBBBB;
   font-weight: normal;
+  font-size: 1rem;
   @media screen and (max-width: 767px) {
-    margin-left: 10%;
-    letter-spacing: 0.01em;
+    margin-left: 2.5rem;
+    letter-spacing: 0.01rem;
   }
   @media screen and (min-width: 768px) {
     line-height: 2;
-    font-size: 100%;
-    margin-left: 12%;
-    letter-spacing: 0.1em;
+    margin-left: 7rem;
+    letter-spacing: 0.1rem;
   }
 `;
 
-const WhiteNormalMainTextInner = styled.p`
+const WhiteNormalMainTextInner = styled.h3`
   color: #BBBBBB;
   font-weight: normal;
+  font-size: 1rem;
   @media screen and (max-width: 767px) {
-    margin-left: 15%;
-    letter-spacing: 0.01em;
+    margin-left: 3.65rem;
+    letter-spacing: 0.01rem;
   }
   @media screen and (min-width: 768px) {
-    font-size: 100%;
     line-height: 2;
-    margin-left: 17%;
-    letter-spacing: 0.1em;
+    margin-left: 8.4rem;
+    letter-spacing: 0.1rem;
   }
 `;
 
 const BodySpan = styled.div`
-  padding-bottom: 15%;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 3.6rem;
+
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10rem;
+  }
 `;
 
 const LightBlueLink = styled.a`

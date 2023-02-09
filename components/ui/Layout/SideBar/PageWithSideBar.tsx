@@ -27,19 +27,13 @@ const ProfileIconWrapper = styled.div`
   }
 `;
 
-const ProfileName = styled.h1`
-  @media screen and (max-width: 767px) {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    letter-spacing: 0.2rem;
-  }
-  @media screen and (min-width: 768px) {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    letter-spacing: 0.2rem;
-  }
+const ProfileName = styled.p`
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
 `;
 
 const ProfileDescription = styled.p`
