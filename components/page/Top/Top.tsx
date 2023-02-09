@@ -92,12 +92,11 @@ export const Top = () => {
 
           <WhiteBoldMainText>Personality</WhiteBoldMainText>
           <WhiteNormalMainText>ISFP-A</WhiteNormalMainText>
+          {/*<WhiteNormalMainText><Link href="https://www.16personalities.com/ja/isfp%E5%9E%8B%E3%81%AE%E6%80%A7%E6%A0%BC" target="_blank" passHref legacyBehavior><LightBlueLink>ISFP-A</LightBlueLink></Link></WhiteNormalMainText>*/}
+
           <WhiteNormalMainText>Five Values for Work</WhiteNormalMainText>
           <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
 
-          <WhiteBoldMainText>Writing</WhiteBoldMainText>
-          <WhiteNormalMainText><Link href="https://qiita.com/NakamuraFumiya3" target="_blank" passHref legacyBehavior><LightBlueLink>Qiita</LightBlueLink></Link></WhiteNormalMainText>
-          <WhiteNormalMainText><Link href="https://zenn.dev/nakamura_fumiya" target="_blank" passHref legacyBehavior><LightBlueLink>zenn</LightBlueLink></Link></WhiteNormalMainText>
 
           <WhiteBoldMainText>Education</WhiteBoldMainText>
           <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
