@@ -10,7 +10,7 @@ const SideBarWrapper = styled.div`
   @media screen and (min-width: 768px) {
     position: fixed;
     margin-top: 3.6rem;
-    margin-left: 3.6rem;
+    margin-left: 6rem;
   }
 `;
 
