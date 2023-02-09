@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
-
 import { Header } from '../../functional/Header/Head';
 import { PageWithSideBar } from "../../ui/Layout/SideBar/PageWithSideBar";
 
@@ -10,7 +8,7 @@ const Body = styled.div`
   }
 `;
 
-const WhiteBoldMainText = styled.h1`
+const H1 = styled.h1`
   color: white;
   letter-spacing: 0.14rem;
   @media screen and (max-width: 767px) {
@@ -23,14 +21,14 @@ const WhiteBoldMainText = styled.h1`
     margin-left: 5rem;
     font-size: 1.4rem;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1920px) {
     margin-top: 6rem;
     margin-left: 20rem;
     font-size: 2rem;
   }
 `;
 
-const WhiteNormalMainText = styled.h2`
+const H2 = styled.h2`
   color: #BBBBBB;
   font-weight: normal;
   @media screen and (max-width: 767px) {
@@ -44,7 +42,7 @@ const WhiteNormalMainText = styled.h2`
     letter-spacing: 0.1rem;
     font-size: 1rem;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1920px) {
     line-height: 2;
     margin-left: 22rem;
     letter-spacing: 0.1rem;
@@ -52,7 +50,7 @@ const WhiteNormalMainText = styled.h2`
   }
 `;
 
-const WhiteNormalMainTextInner = styled.h3`
+const H3 = styled.h3`
   color: #BBBBBB;
   font-weight: normal;
   @media screen and (max-width: 767px) {
@@ -66,7 +64,7 @@ const WhiteNormalMainTextInner = styled.h3`
     letter-spacing: 0.1rem;
     font-size: 1rem;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1920px) {
     line-height: 2;
     margin-left: 24.5rem;
     letter-spacing: 0.1rem;
@@ -92,42 +90,40 @@ export const Top = () => {
   return (
     <>
       <Header />
-
       <Body>
         <PageWithSideBar />
         <br />
         <div>
-          <WhiteBoldMainText>Skills</WhiteBoldMainText>
-          <WhiteNormalMainText>Golang / Ruby / Ruby on Rails / MySQL / Git</WhiteNormalMainText>
+          <H1>Skills</H1>
+          <H2>Golang / Ruby / Ruby on Rails / MySQL / Git</H2>
 
-          <WhiteBoldMainText>Interest/Studying</WhiteBoldMainText>
-          <WhiteNormalMainText>HTML / CSS / JavaScript / TypeScript / React / Next.js / AWS / DDD / Figma</WhiteNormalMainText>
-          <WhiteNormalMainText>Business Domain / Product Growth</WhiteNormalMainText>
+          <H1>Interest/Studying</H1>
+          <H2>HTML / CSS / JavaScript / TypeScript / React / Next.js /
+            AWS / DDD / Figma</H2>
+          <H2>Business Domain / Product Growth</H2>
 
-          <WhiteBoldMainText>Carrer</WhiteBoldMainText>
-          <WhiteNormalMainText>Vanish Standard Inc. (Sep, 2022 ~ Present)</WhiteNormalMainText>
-          <WhiteNormalMainTextInner>Development of "STAFF START" using Go.</WhiteNormalMainTextInner>
+          <H1>Carrer</H1>
+          <H2>Vanish Standard Inc. (Sep, 2022 ~ Present)</H2>
+          <H3>Development of "STAFF START" using Go.</H3>
 
-          <WhiteNormalMainText>Placole Inc. (Aug, 2020 ~ Jul, 2022)</WhiteNormalMainText>
-          <WhiteNormalMainTextInner>Development for "PLACOLE WEDDING" and "ViKet Town" using Ruby.</WhiteNormalMainTextInner>
-          <WhiteNormalMainTextInner>Experienced in project leadership of a 5-person project for about 6 months.</WhiteNormalMainTextInner>
+          <H2>Placole Inc. (Aug, 2020 ~ Jul, 2022)</H2>
+          <H3>Development for "PLACOLE WEDDING" and "ViKet Town" using Ruby.</H3>
+          <H3>Experienced in project leadership of a 5-person project for about 6 months.</H3>
 
-          <WhiteNormalMainText>NS Solutions Tokyo Inc. (Apr, 2019 ~ Jul, 2020)</WhiteNormalMainText>
-          <WhiteNormalMainTextInner>Building a CPU utilization monitoring system for host machines using Elasticsearch and Grafana.</WhiteNormalMainTextInner>
+          <H2>NS Solutions Tokyo Inc. (Apr, 2019 ~ Jul, 2020)</H2>
+          <H3>Building a CPU utilization monitoring system for host machines using Elasticsearch and Grafana.</H3>
 
-          <WhiteBoldMainText>Personality</WhiteBoldMainText>
-          <WhiteNormalMainText>ISFP-A</WhiteNormalMainText>
-          {/*<WhiteNormalMainText><Link href="https://www.16personalities.com/ja/isfp%E5%9E%8B%E3%81%AE%E6%80%A7%E6%A0%BC" target="_blank" passHref legacyBehavior><LightBlueLink>ISFP-A</LightBlueLink></Link></WhiteNormalMainText>*/}
+          <H1>Personality</H1>
+          <H2>ISFP-A</H2>
 
-          <WhiteNormalMainText>Five Values for Work</WhiteNormalMainText>
-          <WhiteNormalMainTextInner>Altruistic / Passion / Cooperation / Professional / Change</WhiteNormalMainTextInner>
+          <H2>Five Values for Work</H2>
+          <H3>Altruistic / Passion / Cooperation / Professional / Change</H3>
+          
+          <H1>Education</H1>
+          <H2>Functional Materials Engineering</H2>
+          <H3>Ehime University</H3>
 
-
-          <WhiteBoldMainText>Education</WhiteBoldMainText>
-          <WhiteNormalMainText>Functional Materials Engineering</WhiteNormalMainText>
-          <WhiteNormalMainTextInner>Ehime University</WhiteNormalMainTextInner>
-
-          <BodySpan></BodySpan>
+          <BodySpan />
         </div>
       </Body>
     </>

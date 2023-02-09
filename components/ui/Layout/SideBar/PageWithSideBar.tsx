@@ -25,7 +25,7 @@ const ProfileIconWrapper = styled.div`
     margin-left: 1.8rem;
     margin-bottom: 1.5rem;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1920px) {
     margin-top: 1.2rem;
     margin-left: 4rem;
     margin-bottom: 1.5rem;
@@ -41,7 +41,7 @@ const ProfileName = styled.p`
     margin-bottom: 1rem;
     letter-spacing: 0.2rem;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1920px) {
     color: white;
     font-size: 1.8rem;
     font-weight: bold;
@@ -59,7 +59,7 @@ const ProfileDescription = styled.p`
     margin-left: 0.2rem;
     letter-spacing: 0.13rem;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1920px) {
     color: white;
     line-height: 0.6rem;
     margin-left: 1rem;
@@ -77,7 +77,7 @@ const IconParent = styled.div`
   @media screen and (min-width: 768px) {
     margin-top: 1.8rem;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1920px) {
     margin-top: 1.8rem;
     margin-left: 1rem;
   }
