@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styled from "styled-components";
 import {IconImage} from "../../Icon/IconImage";
+import {useEffect, useState} from "react";
 
 const SideBarWrapper = styled.div`
   @media screen and (max-width: 767px) {
@@ -95,38 +96,57 @@ const SideBarSpacer = styled.div`
   }
 `;
 
-export const PageWithSideBar = () => (
-  <>
-    <SideBarWrapper>
-      <ProfileIconWrapper>
-        <IconImage x={144} y={144} imageURL={"/images/profile/initial.png"}/>
-      </ProfileIconWrapper>
-      <ProfileName>Fumiya Nakamura</ProfileName>
-      <ProfileDescription>I’m a back-end developer.</ProfileDescription>
-      <ProfileDescription>Born in 1996.</ProfileDescription>
-      <IconParent>
-        <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
-          <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/twitter.png"}/>
-          </IconHover>
-        </Link>
-        <Link href="https://github.com/NakamuraFumiya" target="_blank">
-          <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/github.png"}/>
-          </IconHover>
-        </Link>
-        <Link href="https://zenn.dev/nakamura_fumiya" target="_blank">
-          <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/zenn.png"}/>
-          </IconHover>
-        </Link>
-        <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
-          <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/qiita.png"}/>
-          </IconHover>
-        </Link>
-      </IconParent>
-    </SideBarWrapper>
-    <SideBarSpacer />
-  </>
-);
+const profileImages = [
+  "/images/profile/initial.png",
+  "/images/profile/yellow.png",
+  "/images/profile/purple.png",
+  "/images/profile/orange.png",
+  "/images/profile/green.png",
+  "/images/profile/blue.png",
+  "/images/profile/black.png",
+];
+
+export const PageWithSideBar = () => {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    setInterval(() => {
+      setIndex(prev => prev === profileImages.length - 1 ? 0 : prev + 1);
+    }, 3000)
+  }, []);
+
+  return (
+    <>
+      <SideBarWrapper>
+        <ProfileIconWrapper>
+          <IconImage x={144} y={144} imageURL={profileImages[index]}/>
+        </ProfileIconWrapper>
+        <ProfileName>Fumiya Nakamura</ProfileName>
+        <ProfileDescription>I’m a back-end developer.</ProfileDescription>
+        <ProfileDescription>Born in 1996.</ProfileDescription>
+        <IconParent>
+          <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
+            <IconHover>
+              <IconImage x={20} y={20} imageURL={"/images/icon/twitter.png"}/>
+            </IconHover>
+          </Link>
+          <Link href="https://github.com/NakamuraFumiya" target="_blank">
+            <IconHover>
+              <IconImage x={20} y={20} imageURL={"/images/icon/github.png"}/>
+            </IconHover>
+          </Link>
+          <Link href="https://zenn.dev/nakamura_fumiya" target="_blank">
+            <IconHover>
+              <IconImage x={20} y={20} imageURL={"/images/icon/zenn.png"}/>
+            </IconHover>
+          </Link>
+          <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
+            <IconHover>
+              <IconImage x={20} y={20} imageURL={"/images/icon/qiita.png"}/>
+            </IconHover>
+          </Link>
+        </IconParent>
+      </SideBarWrapper>
+      <SideBarSpacer/>
+    </>
+  )
+};
