@@ -59,6 +59,7 @@ const ProfileDescription = styled.p`
   }
   @media screen and (min-width: 768px) {
     margin-left: 0.2rem;
+    letter-spacing: 0.13rem;
   }
   @media screen and (min-width: 1920px) {
     margin-left: 1rem;
@@ -98,7 +99,7 @@ export const PageWithSideBar = () => (
   <>
     <SideBarWrapper>
       <ProfileIconWrapper>
-        <IconImage x={144} y={144} imageURL={"/images/fumiya-circle.png"}/>
+        <IconImage x={144} y={144} imageURL={"/images/profile/initial.png"}/>
       </ProfileIconWrapper>
       <ProfileName>Fumiya Nakamura</ProfileName>
       <ProfileDescription>I’m a back-end developer.</ProfileDescription>
@@ -106,22 +107,22 @@ export const PageWithSideBar = () => (
       <IconParent>
         <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/twitter-icon.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/twitter.png"}/>
           </IconHover>
         </Link>
         <Link href="https://github.com/NakamuraFumiya" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/github-icon.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/github.png"}/>
           </IconHover>
         </Link>
         <Link href="https://zenn.dev/nakamura_fumiya" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/zenn-icon.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/zenn.png"}/>
           </IconHover>
         </Link>
         <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/qiita-icon.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/qiita.png"}/>
           </IconHover>
         </Link>
       </IconParent>

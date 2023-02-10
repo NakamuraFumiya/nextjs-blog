@@ -98,8 +98,7 @@ export const Top = () => {
           <H2>Golang / Ruby / Ruby on Rails / MySQL / Git</H2>
 
           <H1>Interest/Studying</H1>
-          <H2>HTML / CSS / JavaScript / TypeScript / React / Next.js /
-            AWS / DDD / Figma</H2>
+          <H2>HTML / CSS / JavaScript / TypeScript / React / Next.js / AWS / DDD / Figma</H2>
           <H2>Business Domain / Product Growth</H2>
 
           <H1>Carrer</H1>
