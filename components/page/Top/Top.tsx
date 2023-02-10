@@ -118,7 +118,7 @@ export const Top = () => {
 
           <H2>Five Values for Work</H2>
           <H3>Altruistic / Passion / Cooperation / Professional / Change</H3>
-          
+
           <H1>Education</H1>
           <H2>Functional Materials Engineering</H2>
           <H3>Ehime University</H3>
