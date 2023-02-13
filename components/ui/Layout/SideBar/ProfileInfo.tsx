@@ -69,22 +69,22 @@ export const ProfileInfo = memo(() => {
       <IconParent>
         <Link href="https://twitter.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/twitter.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/twitter.png"} alt={"Twitter Icon"}/>
           </IconHover>
         </Link>
         <Link href="https://github.com/NakamuraFumiya" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/github.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/github.png"} alt={"GitHub Icon"}/>
           </IconHover>
         </Link>
         <Link href="https://zenn.dev/nakamura_fumiya" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/zenn.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/zenn.png"} alt={"zenn Icon"}/>
           </IconHover>
         </Link>
         <Link href="https://qiita.com/NakamuraFumiya3" target="_blank">
           <IconHover>
-            <IconImage x={20} y={20} imageURL={"/images/icon/qiita.png"}/>
+            <IconImage x={20} y={20} imageURL={"/images/icon/qiita.png"} alt={"Qiita Icon"}/>
           </IconHover>
         </Link>
       </IconParent>
