@@ -61,7 +61,7 @@ export const PageWithSideBar = () => {
     <>
       <SideBarWrapper>
         <ProfileIconWrapper>
-          <IconImage x={144} y={144} imageURL={profileImages[index]}/>
+          <IconImage x={144} y={144} imageURL={profileImages[index]} alt={"Profile Icon"}/>
         </ProfileIconWrapper>
         <ProfileInfo />
       </SideBarWrapper>
