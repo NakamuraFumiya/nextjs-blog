@@ -54,7 +54,7 @@ export const PageWithSideBar = () => {
   useEffect(() => {
     setInterval(() => {
       setIndex(prev => prev === profileImages.length - 1 ? 0 : prev + 1);
-    }, 3000)
+    }, 20000)
   }, []);
 
   return (
