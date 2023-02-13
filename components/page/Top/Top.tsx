@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Header } from '../../functional/Header/Head';
 import { PageWithSideBar } from "../../ui/Layout/SideBar/PageWithSideBar";
+import {ArrangeWords} from "../../functional/Text/ArrangeWords";
 
 const Body = styled.div`
   @media screen and (min-width: 768px) {
@@ -87,6 +88,11 @@ const LightBlueLink = styled.a`
 `
 
 export const Top = () => {
+  const skills = ["Golang", "Ruby", "Ruby on Rails", "MySQL", "Git"];
+  const studying = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "AWS", "DDD"];
+  const interest = ["Business Domain", "Product Growth"];
+  const coreValues = ["Altruistic", "Passion", "Cooperation", "Professional", "Change"]
+
   return (
     <>
       <Header />
@@ -95,11 +101,11 @@ export const Top = () => {
         <br />
         <div>
           <H1>Skills</H1>
-          <H2>Golang / Ruby / Ruby on Rails / MySQL / Git</H2>
+          <H2>{ArrangeWords(skills)}</H2>
 
           <H1>Interest/Studying</H1>
-          <H2>HTML / CSS / JavaScript / TypeScript / React / Next.js / AWS / DDD / Figma</H2>
-          <H2>Business Domain / Product Growth</H2>
+          <H2>{ArrangeWords(studying)}</H2>
+          <H2>{ArrangeWords(interest)}</H2>
 
           <H1>Carrer</H1>
           <H2>Vanish Standard Inc. (Sep, 2022 ~ Present)</H2>
@@ -116,7 +122,7 @@ export const Top = () => {
           <H2>ISFP-A</H2>
 
           <H2>Five Values for Work</H2>
-          <H3>Altruistic / Passion / Cooperation / Professional / Change</H3>
+          <H3>{ArrangeWords(coreValues)}</H3>
 
           <H1>Education</H1>
           <H2>Functional Materials Engineering</H2>
