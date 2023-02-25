@@ -22,7 +22,6 @@ export const Header = () => (
       <meta name="twitter:site" content="@NakamuraFumiya3" />
 
       <link rel="canonical" href="https://www.fumiyanakamura.com/" />
-      <meta name="robots" content="noindex,nofollow" />
     </Head>
   </>
 );
