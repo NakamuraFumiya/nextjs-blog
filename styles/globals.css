@@ -5,5 +5,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Mukta Mahee";
-  background-color: #1a1e2e;
+  /* background: #1a1e2e; */
+  background: linear-gradient(#9761a9,#4a4f9c);
 }
