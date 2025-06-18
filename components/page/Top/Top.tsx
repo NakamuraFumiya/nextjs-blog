@@ -88,10 +88,33 @@ const LightBlueLink = styled.a`
 `
 
 export const Top = () => {
-  const skills = ["Golang", "Ruby", "Ruby on Rails", "MySQL", "Git"];
-  const studying = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "AWS", "DDD"];
-  const interest = ["Business Domain", "Product Growth"];
-  const coreValues = ["Altruistic", "Passion", "Cooperation", "Professional", "Change"]
+  const skills = [
+    "Golang",
+    "Ruby",
+    "MySQL",
+  ];
+  const learned = [
+    "Onion Architecture",
+    "DDD",
+  ];
+  const studying = [
+    "Computer Science",
+    "Software Architecture",
+    "System Design",
+  ];
+  const interest = [
+    "AWS",
+    "Kubernetes",
+    "Infrastructure as Code (Terraform)", 
+    "CI/CD (GitHub Actions)",
+  ];
+  const coreValues = [
+    "Altruistic",
+    "Passion",
+    "Cooperation",
+    "Professional",
+    "Change",
+  ]
 
   return (
     <>
@@ -102,6 +125,9 @@ export const Top = () => {
         <div>
           <H1>Skills</H1>
           <H2>{ArrangeWords(skills)}</H2>
+
+          <H1>Learned</H1>
+          <H2>{ArrangeWords(learned)}</H2>
 
           <H1>Interest/Studying</H1>
           <H2>{ArrangeWords(studying)}</H2>
