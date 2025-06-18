@@ -108,7 +108,10 @@ export const Top = () => {
           <H2>{ArrangeWords(interest)}</H2>
 
           <H1>Carrer</H1>
-          <H2>Vanish Standard Inc. (Sep, 2022 ~ Present)</H2>
+          <H2>Handy Inc. (Jul, 2025 ~ Present)</H2>
+          <H3>Development of "Handy進路指導室" using Go.</H3>
+
+          <H2>Vanish Standard Inc. (Sep, 2022 ~ Jun, 2025)</H2>
           <H3>Development of "STAFF START" using Go.</H3>
 
           <H2>Placole Inc. (Aug, 2020 ~ Jul, 2022)</H2>
